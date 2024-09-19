@@ -1,19 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import LoginButton from './components/LoginButton';
-import Profile from './components/Profile';
-import LogoutButton from './components/LogoutButton';
+
+import { useAuth0 } from '@auth0/auth0-react';
+import styles from './App.module.css'
+import { LoginAdvice } from './components/LoginAdvice/LoginAdvice';
+import { ControlPanel } from './components/ControlPanel/ControlPanel';
 
 function App() {
+  const {isAuthenticated,isLoading} = useAuth0();
   
+  if (isLoading) {
+    return <div>Loading ...</div>;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <LoginButton/>
-        <LogoutButton/>
-        <Profile/>
-      </header>
+    <div className={styles.App}>
+        {isAuthenticated ? <ControlPanel/> : <LoginAdvice/>}
     </div>
   );
 }
