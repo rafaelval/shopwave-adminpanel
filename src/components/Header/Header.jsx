@@ -13,7 +13,7 @@ export const Header = () => {
           <span>{user.email}</span>
         </div>
       </div>
-<LogoutButton /> 
+      <LogoutButton />
     </div>
   );
 };

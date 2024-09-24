@@ -1,9 +1,9 @@
-.contPrinc{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.contPrinc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button{
-      height: 25%;
+button {
+  height: 25%;
 }
