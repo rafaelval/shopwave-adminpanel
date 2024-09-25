@@ -5,12 +5,12 @@
   justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: rgb(119, 119, 119);
-  width: 100vw;
+  width: 85vw;
 }
 
 .infoCont {
   display: flex;
-  margin-left: -120px;
+  
 }
 
 .contPrinc img {

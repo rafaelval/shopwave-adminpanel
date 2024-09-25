@@ -1,10 +1,11 @@
 .contPrinc {
-  height: 100vh;
   background-color: rgb(10, 63, 45);
+  width: 15vw;
+  height: 100vh;
 }
 
 .logo {
-  height: 25vmin;
+  width: 14vw;
 }
 
 ul {
